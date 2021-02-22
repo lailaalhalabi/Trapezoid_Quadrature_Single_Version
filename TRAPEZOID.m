@@ -12,6 +12,8 @@ function I = TRAPEZOID(f,a,b)
   format short
   h*(sum(f(x)))/2
   fprintf('\n')
+ 
+endfunction
   
   #Example: 
   
