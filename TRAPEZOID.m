@@ -1,8 +1,9 @@
 function I = TRAPEZOID(f,a,b)
   
-  #trapezoid quadrature formula (single version).
+  # Trapezoid quadrature formula (single version).
   
   format long
+  # Defining two point of the integral a & b
   x = linspace(a,b,1);
   h = b-a;
   fprintf('\nLONG FORMAT\n')
@@ -11,5 +12,16 @@ function I = TRAPEZOID(f,a,b)
   format short
   h*(sum(f(x)))/2
   fprintf('\n')
+  
+  #Example: 
+  
+  #I = TRAPEZOID(@(x)log(x),1,2)
+  
+  #WE GET THE ANSWER:
+  
+  #LONG FORMAT
+  #ans = 3.465735902799726e-01
+  #SHORT FORMAT
+  #ans = 0.34657
   
 endfunction
