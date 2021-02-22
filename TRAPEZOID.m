@@ -13,8 +13,6 @@ function I = TRAPEZOID(f,a,b)
   h*(sum(f(x)))/2
   fprintf('\n')
  
-endfunction
-  
   #Example: 
   
   #I = TRAPEZOID(@(x)log(x),1,2)
